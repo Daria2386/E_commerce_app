@@ -1,6 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
+:root{
+    --header-height: 70px;
+    --footer-height: 65px;
+    --primary-bg-color: #CCCCCC;
+    --secondary-bg-color:#041423;
+}
+*{
+    box-sizing: border-box;
+}
+
 html{
-    
+    font-family:Inter, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+
 }
 header{
-    background-color: #041423;
+    width: 100%;
+    height: 70px;
+    background-color: var(--secondary-bg-colorcolor);
+}
+
+main{
+
+
+}
+footer{
+    background-color: var(--secondary-bg-colorcolor);
+    width: 100%;
+    height: var(--footer-height);
+    margin-top: auto;
 }
