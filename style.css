@@ -1,68 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
-:root{
-    --header-height: 70px;
-    --footer-height: 65px;
-    --primary-bg-color: #CCCCCC;
-    --secondary-bg-color:#041423;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
+:root {
+  --header-height: 70px;
+  --footer-height: 65px;
+  --primary-bg-color: #cccccc;
+  --secondary-bg-color: #041423;
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
+html {
+  font-family: Inter, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
 
-html{
-    font-family:Inter, Helvetica, sans-serif;
+  width: 100vw; /* change from % to vw */
+  height: 100vh; /* change from % to vh */
 }
-body{
-    margin: 0;
-    width: 100%;
-    height: 100%;
+.wrapper {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  display: flex;
 }
-.wrapper{
-    width: 100%;
-    max-width: 390px;
-    margin: 0 auto;
-    display: flex;
 
+.header-wrapper {
+  height: var(--header-height); /* used the var instead of 70px*/
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--secondary-bg-color);
 }
-header{
-    width: 100%;
-    height: 70px;
-    background-color: var(--secondary-bg-colorcolor);
+.logo {
+  width: 65px;
+  height: 65px;
+  background-image: url(/download__1_-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-.header-wrapper{
-justify-content: space-between;
-align-items: center;
-padding: 0 20px;
+a {
+  text-decoration: none;
+  color: lightblue;
 }
-.logo{
-    width: 65px;
-    height: 65px;
-    background-image: url(/download__1_-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+a:hover {
+  color: blue;
 }
-a{
-    text-decoration: none;
-    color: lightblue;
-
+.navigation-menu {
+  color: white;
 }
-a:hover{
-    color: blue;
+main {
+  min-height: calc(
+    100% - var(--header-height) - var(--footer-height)
+  ); /* change from var you used var for color not hight  */
+  width: 100%;
+  margin-top: auto;
 }
-.navigation-menu{
-    color: white;
-}
-main{
-    min-height: calc(100vh - var(--secondary-bg-color));
-    width: 100%;
-    height: var(--footer-height);
-    margin-top: auto;
-}
-footer{
-    background-color: var(--secondary-bg-colorcolor);
-    width: 100%;
-    height: var(--footer-height);
-    margin-top: auto;
+footer {
+  width: 100%;
+  height: var(--footer-height);
+  margin-top: auto;
+  background-color: var(--secondary-bg-color);/*removed color text from var it was colorcolor */
 }
